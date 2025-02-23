@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #00f;
+    background-color: #000;
+    position: relative;
+    min-height: 100vh;
+}
+
+.banner {
+    background-image: url('/ARSENAL/img/desktop-wallpaper-ammunition-bullets-ammunition-bullets.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+
+.cabeca, .M4, .ESCOPETA, .SNIPE, .galeria, .rodape {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #00f;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.cabeca {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-bar ul li {
+    margin-left: 15px;
+}
+
+.nav-bar ul li a {
+    color: #00f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-bar ul li a:hover {
+    color: #ff5722;
+}
+
+.weapon-image {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
+.M4, .ESCOPETA, .SNIPE {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.M4:hover, .ESCOPETA:hover, .SNIPE:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+}
+
+.details:hover {
+    color: #ff5722;
+    font-weight: bold;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.galeria img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 600px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.rodape {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.rodape ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.rodape ul li {
+    margin-left: 15px;
+}
+
+.rodape ul li a {
+    color: #00f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.rodape ul li a:hover {
+    color: #ff5722;
+}
